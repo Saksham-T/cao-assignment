@@ -1,13 +1,78 @@
+/* index.css or other global styles file */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e0e0;
+  min-height: 100vh;
+  overflow: hidden;  /* Prevent scrollbars */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-container {
+  position: relative;
+  z-index: 1; /* Makes sure content is above Vanta background */
+}
+
+.selectorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7); /* Slightly dark background to ensure visibility */
+  color: #e0e0e0;
+  text-align: center;
+  z-index: 2;
+}
+
+.selectorContainer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.cardGrid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  height: 150px;
+  background: #1f1f1f;
+  border: 1px solid rgba(0, 255, 140, 0.15);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #ff0062;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 255, 140, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  background: rgba(198, 183, 183, 0.801);
+  box-shadow: 0 15px 35px rgba(255, 51, 102, 0.3);
+}
+
+button {
+  background-color: #1f1f1f;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin: 10px;
+  color: #0f0f0f;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00d173;
 }

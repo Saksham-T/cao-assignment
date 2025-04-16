@@ -1,0 +1,65 @@
+/* AlgorithmSelector.module.css */
+
+.selectorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.36); /* Dark transparent background to contrast */
+    color: #e0e0e0;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .selectorContainer h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ff3366; /* Red accent for title */
+  }
+  
+  .cardGrid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 250px;
+    height: 150px;
+    background: #1b0b26;
+    border: 1px solid rgba(255, 51, 102, 0.15); /* Red border accent */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #ff3366; /* Red color for text */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 51, 102, 0.1); /* Soft red shadow */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px) scale(1.03);
+    background: rgba(94, 0, 23, 0.296); /* Hover with soft red background */
+    box-shadow: 0 15px 35px rgba(255, 51, 102, 0.3); /* Stronger red shadow on hover */
+  }
+  
+  button {
+    background-color: #ff3366; /* Red accent for buttons */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #cc2d55; /* Darker red shade for hover */
+  }
+  
