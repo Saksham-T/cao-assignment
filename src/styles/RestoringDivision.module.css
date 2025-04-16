@@ -27,7 +27,7 @@
   }
   
   button:hover {
-    background-color: #145c32;
+    background-color: #000000;
   }
   
   /* Hide old ul list style if still used */
@@ -57,7 +57,7 @@
   }
   
   th {
-    background-color: #198754;
+    background-color: #000000;
     color: white;
     position: sticky;
     top: 0;
@@ -69,5 +69,27 @@
   
   tr:hover {
     background-color: #e9f5ee;
+  }
+  .wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .card {
+    width: 90%;
+    max-width: 800px;
+    height: 95vh;
+    overflow-y: auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
   }
   
